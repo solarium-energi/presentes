@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugestão de Presente</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: rgba(255, 182, 193, 0.6); /* rosa bebê suave */
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .popup {
+            background: #ffe6ee; /* rosa bebê mais claro */
+            border-radius: 12px;
+            padding: 25px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+            animation: fadeIn 0.7s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0; transform: scale(0.9);}
+            to {opacity: 1; transform: scale(1);}
+        }
+
+        .popup h2 {
+            color: #c2185b;
+            margin-bottom: 15px;
+        }
+
+        .gift-text {
+            font-size: 18px;
+            color: #444;
+            margin-bottom: 20px;
+        }
+
+        .click-image img {
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .click-image img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="popup">
+        <h2>Sugestão de Presente 🎀</h2>
+
+        <p class="gift-text">
+            Roupa tamanho <b>10</b><br>
+            Sapato <b>31/32</b>
+        </p>
+
+        <a class="click-image" href="https://seusite.com" target="_blank">
+            <img src="https://via.placeholder.com/300x200/ffc1d6/ffffff?text=Clique+Aqui" alt="Clique para ver mais">
+        </a>
+    </div>
+
+</body>
+</html>
