@@ -2,19 +2,26 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Sugestão de Presente</title>
 
     <style>
-        body {
+        html, body {
             margin: 0;
             padding: 0;
+            height: 100%;
+        }
+
+        body {
             background: rgba(255, 182, 193, 0.6); /* rosa bebê suave */
             font-family: Arial, Helvetica, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+
+            /* Suporte total para mobile */
+            min-height: 100vh;
+            height: -webkit-fill-available;
         }
 
         .popup {
@@ -22,6 +29,7 @@
             border-radius: 12px;
             padding: 25px;
             width: 300px;
+            max-width: 90vw; /* evita corte no celular */
             text-align: center;
             box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
             animation: fadeIn 0.7s ease-in-out;
@@ -42,7 +50,6 @@
             color: #444;
             margin-bottom: 0;
         }
-
     </style>
 </head>
 <body>
